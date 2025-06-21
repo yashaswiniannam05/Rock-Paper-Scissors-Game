@@ -1,0 +1,84 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.game_name{
+    height:90px;
+    background-color:rgb(0, 0, 84);
+}
+
+.game_name h1{
+    text-align: center;
+    line-height: 90px;
+    color: white;
+    font-size: 2.5rem;
+}
+
+.choices_container{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.choice{
+    height: 180px;
+    width: 180px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+
+.choice:hover{
+    border: 5px solid black; 
+    cursor: pointer;
+}
+
+.choice img{
+    height: 180px;
+    width: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.score_board{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    font-size: 2rem;
+    gap:5rem;
+    text-align: center;
+}
+
+.user_score_zoom{
+    transform:scale(1.5);
+    transition: transform 0.3s ease-in-out;
+    color: rgb(255, 196, 0);
+    font-weight: 700;
+}
+
+.computer_score_zoom{
+    transform:scale(1.5);
+    transition: transform 0.3s ease-in-out;
+    color: rgb(255, 0, 174);
+    font-weight: 700;
+}
+
+.message{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.message p{
+    background-color: black;
+    padding:0.75rem;
+    border-radius: 7px;
+}
